@@ -22,10 +22,10 @@ As much as possible, stick to using only the official documentation and StackOve
 
 Create a RESTful API for a resource named `cows` that responds to the following endpoints:
 
-| intention           | request type | request url | request body                              | side effect                    | response body                                                                    |
-|---------------------|:------------:|-------------|-------------------------------------------|--------------------------------|----------------------------------------------------------------------------------|
-| read all cow data   | GET          | `/api/cows` | none                                      | none                           | `[{name: 'Buttercup', description: '...'}, {name: 'Daisy', description: '...'}]` |
-| create new cow data | POST         | `/api/cows` | `{name: 'Milkshake', description: '...'}` | creates new record in database | `{name: 'Milkshake', description: '...'}`                                        |
+| intention           | request type | request url | request body                              | side effect                    | response body                           |
+|---------------------|:------------:|-------------|-------------------------------------------|--------------------------------|-----------------------------------------|
+| read all cow data   | GET          | `/api/cows` | none                                      | none                           |`[{name: 'Buttercup', description: '...'}]` |
+| create new cow data | POST         | `/api/cows` | `{name: 'Milkshake', description: '...'}` | creates new record in database | `{name: 'Milkshake', description: '...'}`|
 
 Your web server should 100% be interfacing with a database for this phase. Confirm this functionality is working properly with Postman (recommended) or via the `curl` command in your terminal.
 

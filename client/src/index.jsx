@@ -34,7 +34,7 @@ class App extends React.Component {
       .then(({data}) => {
         console.log('Successfully retrieved cows: ', data)
         this.setState({
-          cowList: data[0]
+          cowList: data
         })
       })
       .catch((err) => {
